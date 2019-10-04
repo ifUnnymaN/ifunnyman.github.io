@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 280px;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  transition: 0.2s ease-out;
+}
+
+/* GRIIIIIIID */
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Создание ПСЕВДОЭЛЕМЕНТА after: */
+.row:after {
+  /* Очистить потоки обтекания слева и справа. */
+  clear: both;
+  /* Вставить пустой контент, чтобы отработало клир боус */
+  content: "";
+  /* Для корректного отображения в современных/старых браузерах: */
+  display: table;
+}
+
+.col-4 {
+  width: 360px;
+  margin-right: 30px;
+  float: left;
+}
+
+/* Описание для последнего элемента "портфолио" */
+.col-4:last-child {
+  margin-right: 0px;
+}
+
+/* HEADERRRRRRRR */
+
+.header {
+  background-color: #004371;
+  background-image: url(../img/bg/bg-header.jpg.jpg);
+  /* Чтобы не повторялось, если открыто на не стандартном устройстве: */
+  background-repeat: no-repeat;
+  /* Позиционированние по центру: */
+  background-position: center;
+  /* Чтобы картинка покрывала все, где есть контент: */
+  background-size: cover;
+
+  height: 100vh;
+  min-height: 400px;
+
+  color: #ffffff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.header__title {
+  font-family: "Merriweather", serif;
+  font-size: 56px;
+  margin-bottom: 36px;
+  margin-top: -50px;
+}
+
+.header__slogan {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.header__arrow {
+  font-size: 48px;
+  /* background: red; */
+  width: 60px;
+  height: 50px;
+  margin-left: -30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
+
+.header__arrow a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__arrow a:hover {
+  color: #ffe400;
+}
+
+/* ПОРТФОЛИОООООО */
+
+.portfolio {
+  padding-top: 84px;
+  padding-bottom: 112px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
+}
+
+.portfolio-item__title a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.portfolio-item__title a:hover {
+  color: #0052c2;
+  border-color: rgba(0, 92, 194, 0.3);
+}
+
+.title {
+  font-size: 46px;
+  margin-bottom: 67px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.portfolio-item__img {
+  padding-bottom: 25px;
+}
+
+.portfolio-item__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item__title {
+  font-size: 24px;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+
+.portfolio-item__text p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/* ПОРТФОЛИОООООО SINGLE-PAGEEEE  */
+
+.portfolio-single-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.portfolio-single-pag img {
+  margin-bottom: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn__back {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0052c2;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  display: inline-block;
+
+  border-width: 2px;
+  border-color: #0052c2;
+  border-style: solid;
+
+  border-radius: 50px;
+
+  background-color: #fff;
+  padding: 12px 23px 12px 23px;
+
+  margin-bottom: 20px;
+  transition: 0.2s ease-out;
+}
+
+.btn__back:hover {
+  color: #fff;
+  background-color: #0052c2;
+}
+
+/* ПОРТФОЛИОООООО SINGLE-PAGEEEE  */
+
+/* FOOOOOTERRRR */
+/* FOOOOOTERRRR */
+/* FOOOOOTERRRR */
+
+.footer {
+  background-color: #061634;
+  color: #6479a2;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.footer p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+p.footer__name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  line-height: normal;
+  font-family: "Merriweather", serif;
+}
+
+p.footer__social {
+  color: #fff;
+}
+
+p.footer__social_icons {
+  color: #fff;
+  font-size: 32px;
+}
+
+p.footer__social_icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+p.footer__social_icons a:last-child {
+  margin-right: 0px;
+}
+
+p.footer__social_icons a:hover {
+  color: #ffe400;
+}
+
+.btn__vk {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  display: inline-block;
+
+  /* border: 2px solid #ffffff; */
+  border-width: 2px;
+  border-color: #fff;
+  border-style: solid;
+
+  border-radius: 50px;
+
+  background-color: #061634;
+  padding: 12px 23px 12px 23px;
+
+  margin-bottom: 20px;
+  transition: 0.2s ease-out;
+}
+
+.btn__vk:hover {
+  color: #061634;
+  background-color: #fff;
+}
+
+/* FOOOOOTERRRR */
+/* FOOOOOTERRRR */
+/* FOOOOOTERRRR */
+
+/* MEDIAAAAAAA */
+/* MEDIAAAAAAA */
+
+/* При ширине экрана 1160пх и менее 
+будет выполнен медиа запрос: */
+@media (max-width: 1160px) {
+  .container {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%; /* реальная ширина = 
+    width: 100%; + border = 0 + padding = 15 + 15 = 100% +30px  */
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__title {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+
+  .header__slogan {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+
+/* MEDIAAAAAAA */
+/* MEDIAAAAAAA */
+
+/* TRASH
+
+color: #000000;
+font-size: 16px;
+font-weight: 400;
+Text style for "М, акет Ор" 
+color: #0052c2;
+
+*/
+
+/* 
+
+Fonts on landing:
+
+font-family: 'Merriweather', serif;
+font-family: 'PT Sans Caption', sans-serif;
+
+*/

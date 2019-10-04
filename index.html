@@ -2,101 +2,156 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Отображение страницы в мастштабе 100% на устройстве, на котором открыт сатй -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Инструкция для работы в IE -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landing#1</title>
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
     <link
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/favicon/favicon-16x16.png"
+    />
   </head>
   <body>
-    <header class="header">
-      <div class="navbar">
-        <div class="container">
-          <!-- LOGO + TEXT -->
-          <div class="navbar__logo">
-            <div class="navbar__logo-img">
-              <img src="img/header__logo-img.svg" alt="logo" />
-            </div>
-            <div class="navbar__logo-text">
-              <span>Dart</span>
-              service manager
-            </div>
-          </div>
-          <!-- LOGO + TEXT -->
-
-          <!-- NAVBAR-MENU -->
-          <div class="navbar__menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Extension</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </div>
-          <!-- NAVBAR-MENU -->
-
-          <!-- BUTTON-SIGN-UP -->
-          <div class="btn__signup"><a href="#">sign up</a></div>
-          <!-- BUTTON-SIGN-UP -->
-        </div>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header__title">Виталий Григорьев</div>
+      <div class="header__slogan">
+        Верстка сайтов на HTML и CSS<br />HTML5 CSS3 [Comming soon: JS jQuery]
       </div>
+      <div class="header__arrow">
+        <a href="index.html#prof" class="icon-chevron-down"></a>
+      </div>
+    </div>
 
-      <!-- CONTENT -->
+    <!-- PORTFOLIO -->
 
-      <div class="content">
-        <div class="container">
-          <div class="content__left">
-            <div class="content__left_title">
-              <!-- TEXT#1 -->
-              <div class="content__left_title1">
-                lorem Ipsum<br />
-                Dolor sit amet
+    <div id="prof" class="portfolio">
+      <div class="container">
+        <div class="title">
+          Портфолио
+        </div>
+        <div class="row">
+          <!-- Работа с портфолио! -->
+          <div class="col-4">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <img src="img/projects/project_organica.jpg" alt="Organica" />
               </div>
-              <!-- TEXT#2 -->
-              <div class="content__left_title2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do<br />
-                eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim
-                ad<br />
-                minim veniam, quis nostrud exercitation ullamc
+
+              <div class="portfolio-item__title">
+                <a href="work_organica.html">Макет Органика</a>
+              </div>
+              <div class="portfolio-item__text">
+                <p>Верстка одностраничного сайта по PSD макету.</p>
               </div>
             </div>
+          </div>
+          <!-- Закончена работа с порфолио! -->
 
-            <div class="content__btn">
-              <!-- BTN#1 -->
-              <div class="content__btn_buy"><a href="#">BUY NOW</a></div>
-              <!-- BTN#2 -->
-              <div class="content__btn_try"><a href="#">TRY FOR FREE</a></div>
+          <!-- Работа с портфолио! -->
+          <div class="col-4">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <img src="img/projects/project_apollo.jpg" alt="Apollo" />
+              </div>
+
+              <div class="portfolio-item__title">
+                <a href="work_apollo.html">Учебный макет Аполло</a>
+              </div>
+              <div class="portfolio-item__text">
+                <p>
+                  Верстка лендинга хостинг компании. Мобильная адаптивность.
+                </p>
+              </div>
             </div>
           </div>
+          <!-- Закончена работа с порфолио! -->
 
-          <!-- <div class="content__right">
-              <div class="content__right-img"><img src="img/content-pic.png" alt="Content pic"></div>
-              <div class="content__right-player">
-            <div class="content__right-play">>>></div>
-            <div class="content__right-text">Watch the video</div>
-             </div> -->
+          <!-- Работа с портфолио! -->
+          <div class="col-4">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <img src="img/projects/project_portfolio.jpg" alt="Portfolio" />
+              </div>
 
-          <div class="content__right">
-            <div class="content__right-play"><i class="fas fa-play"></i></div>
-            <div class="content__right-text">Watch the video</div>
+              <div class="portfolio-item__title">
+                <a href="work_personal.html">Личный сайт портфолио</a>
+              </div>
+              <div class="portfolio-item__text">
+                <p>
+                  Верстка личного сайта портфолио на котором вы сейчас
+                  находитесь.
+                </p>
+              </div>
+            </div>
           </div>
+          <!-- Закончена работа с порфолио! -->
         </div>
       </div>
+    </div>
 
-      <!-- CONTENT -->
-    </header>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- 1-ая колонка -->
+          <div class="col-4">
+            <p class="footer__name">Виталий Григорьев</p>
+            <p>© HTML верстка и разработка сайтов</p>
+          </div>
+          <!-- КОНЕЦ -->
+
+          <!-- 2-ая колонка -->
+          <div class="col-4">
+            <p class="footer__social">Мои профили в социальных сетях:</p>
+            <p class="footer__social_icons">
+              <a href="https://vk.com/ifunnyman" target="_blank">
+                <i class="icon-vk"></i
+              ></a>
+              <a href="index.html#prof"> <i class="icon-twitter"></i></a>
+              <a
+                href="https://www.youtube.com/channel/UCn5wduCq2Mus0v85QZn9IaA"
+                target="_blank"
+              >
+                <i class="icon-youtube"></i
+              ></a>
+              <a href="https://www.instagram.com/ifunnymani/" target="_blank">
+                <i class="icon-instagram"></i
+              ></a>
+              <a href="index.html#prof"> <i class="icon-facebook"></i></a>
+              <!-- wi 36 ; he 22 -->
+            </p>
+          </div>
+          <!-- КОНЕЦ -->
+
+          <!-- 3-Ья колонка -->
+          <div class="col-4">
+            <div>
+              <a href="https://vk.com/ifunnyman" class="btn__vk" target="_blank"
+                >связаться ВКОНТАКТЕ</a
+              >
+            </div>
+            <p>
+              Напишите мне, чтобы заказать или узнать<br />
+              стоимость верстки вашего проекта
+            </p>
+          </div>
+          <!-- КОНЕЦ -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
