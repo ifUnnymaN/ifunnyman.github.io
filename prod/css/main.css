@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #010101;
+  background-color: #fff;
+  max-width: 1818px;
+  width: 100%;
+  min-height: 100vh;
+  line-height: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 941px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-image: url(../img/header__img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* margin-bottom: 119px; */
+}
+
+/* =======================
+======== HEADER =========
+======================  */
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 28px;
+  margin: 44px 3px 206px 7px;
+  /* overflow: hidden; */
+}
+
+.header__logo img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__list li {
+  list-style-type: none;
+}
+
+.header__list a {
+  color: #fff;
+  margin-right: 42px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+.header__list a:last-child {
+  margin-right: 0;
+}
+.header__list a:hover {
+  text-decoration: none;
+  color: #fed136;
+  transition: 0.3s;
+}
+
+/* =======================
+====== HEADER END ========
+======================  */
+
+/* =======================
+======== CONTENT =========
+======================  */
+
+.header__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content__title1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.content__title2 {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: -1.88px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.btn__header-content a {
+  width: 240px;
+  height: 65px;
+  display: inline-flex;
+  align-items: center;
+  color: #484543;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 24px 53px 26px 52px;
+  border-radius: 5px;
+  background-color: #fed136;
+  margin-bottom: 186px;
+}
+
+.btn__header-content a:hover {
+  color: #fff;
+  background-color: #010101;
+}
+
+/* =======================
+====== CONTENT END =======
+======================  */
+
+/* =======================
+======== SERVICE =========
+======================  */
+
+.service__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 119px;
+}
+
+.service__content-title {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.service__content-descr {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  font-size: 16px;
+}
+
+/* =======================
+====== SERVICE END =======
+======================  */
+
+/* =======================
+====== MAIN CONTENT ======
+======================  */
+
+.content__middle {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 75px;
+  margin-bottom: 115px;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 248px;
+  max-height: 186px;
+  margin-right: 82px;
+}
+
+.main__content:last-child {
+  margin-right: 0;
+}
+
+.main__content-img img {
+  width: 74px;
+  height: 73px;
+  margin-bottom: 24px;
+}
+
+.main__content-title {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.45px;
+  margin-bottom: 18px;
+}
+
+.main__content-descr {
+  font-family: Arial, "Ubuntu", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  text-align: center;
+}
+
+/* =======================
+====== MAIN CONTENT ======
+======================  */
+
+/* =======================
+======= PORTFOLIO ========
+======================  */
+
+section .near__bottom {
+  background-color: #f7f7f7;
+  max-height: 696px;
+  height: 100%;
+}
+
+section .content__middle img {
+  width: 291px;
+  height: 301px;
+  border: 1px solid #010101;
+}
+
+section .content__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 134px;
+}
+
+/* =======================
+======= PORTFOLIO ========
+======================  */
+
+/* =======================
+======= ABOUT US =========
+======================  */
+
+.another__magrin_bottom {
+  /* Отступ от дескрипшена в блоке @About us@ */
+  margin-bottom: 77px;
+}
+
+.footer__img-block_left {
+  margin-left: 57px;
+  margin-bottom: 91px;
+  display: flex;
+  width: 504px;
+  height: 183px;
+  align-items: center;
+  text-align: end;
+}
+
+.footer__img-text_left {
+  margin-right: 40px;
+}
+
+.footer__img-text-title {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+}
+
+.footer__img-text-desc {
+  font-family: Arial, "Ubuntu", sans-serif;
+  margin-top: 18px;
+  color: #777777;
+  letter-spacing: -0.35px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__img-block_right {
+  margin-right: 89px;
+  margin-bottom: 91px;
+  display: flex;
+  align-items: center;
+
+  width: 504px;
+  height: 183px;
+}
+
+.footer__img-text_right {
+  margin-left: 40px;
+}
+
+/* =======================
+======= ABOUT US =========
+======================  */
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 80px;
+  color: #555555;
+  letter-spacing: -0.35px;
+}
